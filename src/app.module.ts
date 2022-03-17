@@ -3,11 +3,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { AnagraficaModule } from './anagrafica/anagrafica.module';
 import { SequelizeModule } from '@nestjs/sequelize';
-import { AuthService } from './auth/auth.service';
-import { UsersService } from './users/users.service';
-import { UsersModule } from './users/users.module';
 import { AuthModule } from './auth/auth.module';
-import { UserEntity } from './users/entities/user.entity';
 
 @Module({
   imports: [AnagraficaModule,

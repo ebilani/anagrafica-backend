@@ -6,9 +6,7 @@ import { UsersService } from 'src/users/users.service';
 export class DoesUserExist implements CanActivate {
     constructor(private readonly userService: UsersService) {}
 
-    canActivate(
-      context: ExecutionContext,
-    ): boolean | Promise<boolean> | Observable<boolean> {
+    canActivate(context: ExecutionContext): boolean | Promise<boolean> | Observable<boolean> {
         const request = context.switchToHttp().getRequest();
         return this.validateRequest(request);
     }

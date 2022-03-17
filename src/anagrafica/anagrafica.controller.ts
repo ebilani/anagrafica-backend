@@ -43,5 +43,4 @@ export class AnagraficaController {
     return this.anagraficaService.getAnagraficaById(id);
   }
 
-
 }

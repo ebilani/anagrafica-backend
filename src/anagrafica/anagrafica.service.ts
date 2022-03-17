@@ -5,9 +5,6 @@ import { InjectModel } from '@nestjs/sequelize';
 import { TipologiaAnagrafica } from './entities/tipologia-anagrafica.entity';
 import { CreateTipologiaAnagraficaDto } from './dto/create-tipologia.dto';
 
-
-
-
 @Injectable()
 export class AnagraficaService {
   constructor(
